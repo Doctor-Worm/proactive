@@ -251,7 +251,8 @@ textarea {
 }
 
 .img-thumbnail {
-  width: auto;
+  display: block;
+  width: 100%;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
@@ -307,4 +308,45 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.textover img { width: 100%; }
+
+.textover { position: relative; }
+
+.image-text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  /* VERTICAL CENTER */
+  top: 0;
+  left: 0;
+  /* HORIZONTAL CENTER */
+  width: 100%;
+  height: 100%;
+  /* COSMETICS */
+  color: var(--light);
+  font-size: 22px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+  backdrop-filter: blur(2px);
+  text-decoration: none;
+}
+
+.image-text:hover {
+  opacity: 1;
+}
+
+.image-text > * {
+  transform: translateY(20px);
+  transition: 0.5s;
+}
+
+.image-text:hover > * {
+  transform: translateY(0);
 }
