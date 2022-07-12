@@ -11,7 +11,7 @@ function Nav({
             <nav>
                 <ul className='flex-row'>
                     <li className='mx-2'>
-                        <a href='#about' onClick={() => { setContactSelected(false); setResumeSelected(false) }}>
+                        <a href='#about' className='navActive' onClick={() => { setContactSelected(false); setResumeSelected(false) }}>
                             About Me
                         </a>
                     </li>
@@ -21,12 +21,12 @@ function Nav({
                         </span>
                     </li>
                     <li className='mx-1'>
-                        <a href='#projects' onClick={() => { setContactSelected(false); setResumeSelected(false) }}>
+                        <a href='#projects' className='navActive' onClick={() => { setContactSelected(false); setResumeSelected(false) }}>
                             Projects
                         </a>
                     </li>
                     <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
-                        <a href='#resume' onClick={() => { setContactSelected(false); setResumeSelected(true) }}>
+                        <a href='#resume' className='navActive' onClick={() => { setContactSelected(false); setResumeSelected(true) }}>
                             Resume
                         </a>
                     </li>

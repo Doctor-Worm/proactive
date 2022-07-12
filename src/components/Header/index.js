@@ -12,7 +12,7 @@ function Header(props) {
     return(
         <header className='flex-row px-1'>
             <h2>
-                <a href='/'>Skylar Jackson</a>
+                <a href='/'>Skylar D. Jackson</a>
             </h2>
             <Nav
             contactSelected={contactSelected}

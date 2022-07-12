@@ -35,12 +35,12 @@ function Projects() {
             <div className='flex-row'>
                 {photos.map((image, i) => (
                     <figure className='textover' key={image.name}>
-                        <img src={require(`../../assets/${i}.jpg`)}
+                        <img src={require(`../../assets/photos/${i}.jpg`)}
                             alt={image.name}
                             className='img-thumbnail mx-1'
                         />
                         <div className='image-text'>
-                            <a href={image.github} target='_blank' rel="noopener noreferrer">
+                            <a href={image.github} target='_blank' rel='noopener noreferrer'>
                                 <figcaption>{image.description}</figcaption>
                             </a>
                         </div>
