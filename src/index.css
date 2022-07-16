@@ -21,10 +21,10 @@ main {
 }
 :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
+  --secondary: #00ffff;
   --tertiary: #B12704;
   --light: #fafafa;
-  --dark: #000000;
+  --dark: #373737;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -51,7 +51,7 @@ body {
   letter-spacing: .1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -318,8 +318,10 @@ a {
 }
 
 .image-text > * {
+  display: flex;
   transform: translateY(20px);
   transition: 0.5s;
+  text-align: center;
 }
 
 .image-text:hover > * {
@@ -342,4 +344,29 @@ a {
 
 .links {
   margin: 0 5%;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 30%;
+  width: 30%;
+  justify-content: right;
+  padding-bottom: 1%;
+}
+
+.component:hover {
+  text-decoration: underline;
+}
+
+.list {
+  list-style-type: circle;
+}
+
+.resume {
+  color: var(--secondary);
+}
+
+.title {
+  text-decoration: underline;
+  padding-bottom: 3%;
 }

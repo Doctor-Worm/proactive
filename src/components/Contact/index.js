@@ -14,8 +14,10 @@ function Contact() {
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
             } else {
-                if (!e.target.value.length) {
+                if (e.target.name === 'name' || 'message') {
+                    if (!e.target.value) {
                     setErrorMessage(`${e.target.name} is required.`);
+                    }
                 } else {
                     setErrorMessage('');
                 }
@@ -36,7 +38,7 @@ function Contact() {
 
     return (
         <section>
-            <h1 data-testid="contact">Contact Me</h1>
+            <h1 className='title' data-testid="contact">Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit} >
                 <div>
                     <label htmlFor='name'>Name:</label>

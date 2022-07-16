@@ -4,34 +4,40 @@ function Projects() {
 
     const [photos] = useState([
         {
-            id: '1',
             name: 'Dad Joke Website',
-            description: 'Dad Joke Meme Creator Website',
+            description: 'Dad Joke Meme Creator',
             github: 'https://github.com/ethancahill/Best-Site-No-Joke'
         },
         {
-            id: '2',
             name: 'Social Tech Meetup',
             description: 'Social Media API Backend NoSQL Database',
             github: 'https://github.com/Doctor-Worm/BFFL-API'
         },
         {
-            id: '3',
             name: 'Busy Shopping Center',
             description: 'Employee Tracking SQL Database',
             github: 'https://github.com/Doctor-Worm/Employee-Tracker'
         },
         {
-            id: '4',
             name: 'Cell Phone in a Shopping Cart',
-            description: 'Ecommerce Website Backend SQL Database Using ORM Sequelize',
+            description: 'Ecommerce Backend SQL DB Using ORM Sequelize',
             github: 'https://github.com/Doctor-Worm/E-Commerce_Backend'
+        },
+        {
+            name: 'Website App',
+            description: 'Throwback Generator',
+            github: 'https://github.com/awnasworthy/throwback-generator'
+        },
+        {
+            name: 'Team Profile Generator',
+            description: 'Business Team Profiles',
+            github: 'https://github.com/Doctor-Worm/Team-Profile-Generator'
         }
     ]);
     // console.log(photos);
     return(
         <div>
-            <h2>Projects</h2>
+            <h2 className='title'>Projects</h2>
             <div className='flex-row'>
                 {photos.map((image, i) => (
                     <figure className='textover' key={image.name}>
