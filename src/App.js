@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
+  const [projectsSelected, setProjectsSelected] = useState(false);
 
   return (
     <div>
@@ -18,17 +19,18 @@ function App() {
         setContactSelected={setContactSelected}
         resumeSelected={resumeSelected}
         setResumeSelected={setResumeSelected}
+        projectsSelected={projectsSelected}
+        setProjectsSelected={setProjectsSelected}
       ></Header>
       <main>
         {contactSelected ? (
           <Contact></Contact>
         ) : resumeSelected ? (
           <Resume></Resume>
-        ) : (
-          <>
-          <About></About>
+        ) : projectsSelected ? (
           <Projects></Projects>
-          </>
+        ) : (
+          <About></About>
         )}
       </main>
       <Footer></Footer>

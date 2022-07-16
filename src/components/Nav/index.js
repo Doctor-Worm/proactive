@@ -4,29 +4,31 @@ function Nav({
     contactSelected,
     setContactSelected,
     resumeSelected,
-    setResumeSelected
+    setResumeSelected,
+    projectsSelected,
+    setProjectsSelected
 }) {
 
     return(
             <nav>
                 <ul className='flex-row'>
-                    <li className='mx-2'>
-                        <a href='#about' onClick={() => { setContactSelected(false); setResumeSelected(false) }}>
+                    <li className='mx-2 navActive'>
+                        <a href='#about' onClick={() => { setContactSelected(false); setResumeSelected(false); setProjectsSelected(false) }}>
                             About Me
                         </a>
                     </li>
                     <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => { setContactSelected(true); setResumeSelected(false) }}>
+                        <span onClick={() => { setContactSelected(true); setResumeSelected(false); setProjectsSelected(false) }}>
                             Contact
                         </span>
                     </li>
-                    <li className='mx-1'>
-                        <a href='#projects' onClick={() => { setContactSelected(false); setResumeSelected(false) }}>
+                    <li className={`mx-2 ${projectsSelected && 'navActive'}`}>
+                        <a href='#projects' className='navActive' onClick={() => { setContactSelected(false); setResumeSelected(false); setProjectsSelected(true) }}>
                             Projects
                         </a>
                     </li>
                     <li className={`mx-2 ${resumeSelected && 'navActive'}`}>
-                        <a href='#resume' onClick={() => { setContactSelected(false); setResumeSelected(true) }}>
+                        <a href='#resume' className='navActive' onClick={() => { setContactSelected(false); setResumeSelected(true); setProjectsSelected(false) }}>
                             Resume
                         </a>
                     </li>

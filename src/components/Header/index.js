@@ -6,19 +6,23 @@ function Header(props) {
         contactSelected,
         setContactSelected,
         resumeSelected,
-        setResumeSelected
+        setResumeSelected,
+        projectsSelected,
+        setProjectsSelected
     } = props;
 
     return(
         <header className='flex-row px-1'>
             <h2>
-                <a href='/'>Skylar Jackson</a>
+                <a href='/'>Skylar D. Jackson</a>
             </h2>
             <Nav
             contactSelected={contactSelected}
             setContactSelected={setContactSelected}
             resumeSelected={resumeSelected}
             setResumeSelected={setResumeSelected}
+            projectsSelected={projectsSelected}
+            setProjectsSelected={setProjectsSelected}
             ></Nav>
         </header>
     );
