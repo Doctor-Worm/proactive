@@ -17,9 +17,9 @@ ___
 
 <br>
 
-- **[Link to the GitHub Repository](https://github.com/Doctor-Worm/Proactive)**
+- **[Link to the GitHub Repository](https://github.com/Doctor-Worm/proactive)**
 
-- **[Active Website](https://doctor-worm.github.io/Proactive/)**
+- **[Active Website](https://doctor-worm.github.io/proactive/)**
 
 <br>
 
