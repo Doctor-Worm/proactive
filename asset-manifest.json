@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/proactive/static/css/main.823146f8.css",
+    "main.js": "/proactive/static/js/main.09b69956.js",
+    "static/js/787.9fc2379a.chunk.js": "/proactive/static/js/787.9fc2379a.chunk.js",
+    "static/media/avatar.jpeg": "/proactive/static/media/avatar.5e9a51cbee639376cca2.jpeg",
+    "static/media/2.jpg": "/proactive/static/media/2.6bd288c5efdf9a795b59.jpg",
+    "static/media/1.jpg": "/proactive/static/media/1.602637641231c007cfed.jpg",
+    "static/media/S-Jackson_Resume.pdf": "/proactive/static/media/S-Jackson_Resume.777e3e04a55636f6ccb8.pdf",
+    "static/media/0.jpg": "/proactive/static/media/0.dac9d4479aeada81cd46.jpg",
+    "static/media/5.jpg": "/proactive/static/media/5.668ef972c44ea0491055.jpg",
+    "static/media/4.jpg": "/proactive/static/media/4.5b2021048319a4c7e646.jpg",
+    "static/media/3.jpg": "/proactive/static/media/3.3333c051200d050cdcdc.jpg",
+    "index.html": "/proactive/index.html",
+    "main.823146f8.css.map": "/proactive/static/css/main.823146f8.css.map",
+    "main.09b69956.js.map": "/proactive/static/js/main.09b69956.js.map",
+    "787.9fc2379a.chunk.js.map": "/proactive/static/js/787.9fc2379a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.823146f8.css",
+    "static/js/main.09b69956.js"
+  ]
+}
