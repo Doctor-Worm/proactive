@@ -258,32 +258,6 @@ textarea {
   cursor: pointer;
 }
 
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
-
 button {
 	background: var(--primary);
 	border: 0;
@@ -298,11 +272,12 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
+	color: var(--light);
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
 	margin-right: -2px;
+  text-decoration: none;
 	
 }
 
@@ -349,4 +324,22 @@ a {
 
 .image-text:hover > * {
   transform: translateY(0);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer h6 {
+  margin: 0 5%
+}
+
+.logo {
+  margin: 0 30px;
+}
+
+.links {
+  margin: 0 5%;
 }
