@@ -32,6 +32,11 @@ function Projects() {
             name: 'Team Profile Generator',
             description: 'Business Team Profiles',
             github: 'https://github.com/Doctor-Worm/Team-Profile-Generator'
+        },
+        {
+            name: 'Cartoon Refrigerator',
+            description: 'Fridge Friend',
+            github: 'https://github.com/beimy/fridge-friend'
         }
     ]);
     // console.log(photos);
