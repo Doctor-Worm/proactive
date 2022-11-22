@@ -29,7 +29,7 @@ function Resume() {
                     <li>GraphQL</li>
                 </ul>
             </section>
-            <a className='resume' href={require('../../assets/resume/S-Jackson_Resume.pdf')}>Open a PDF of my resume.</a>
+            <a className='resume' href={require('../../assets/resume/S_Jackson_Resume.pdf')}>Open a PDF of my resume.</a>
         </div>
     );
 };
